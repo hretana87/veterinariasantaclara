@@ -22,7 +22,8 @@
 
 Capfile
 config/deploy.rb
-*.yml
+database.yml
+secrets.yml
 log/*.log
 **/*.spec.log
 db/*.sqlite3
