@@ -31,6 +31,8 @@ gem "font-awesome-rails"
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
+
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -46,6 +48,12 @@ gem 'capistrano-passenger', '~> 0.2.0'
 gem 'capistrano-rails', '~> 1.2'
 
 gem 'capistrano-rvm'
+
+# Attach image
+gem "paperclip", "~> 5.2.1"
+
+#Client side validations
+gem 'client_side_validations'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

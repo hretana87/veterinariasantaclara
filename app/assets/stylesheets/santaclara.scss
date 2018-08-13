@@ -185,10 +185,6 @@ header.masthead h2 {
   color: #815526;
 }
 
-.small-header {
-  
-}
-
 @media (min-width: 992px) {
   header.masthead {
     padding-top: calc(6rem + 106px);
@@ -373,6 +369,10 @@ a:focus, a:hover, a:active {
   background-color: #fa8ff5 !important;
 }
 
+.text-center {
+  margin: inherit;
+}
+
 .text-primary {
   color: #815526 !important;
 }
@@ -383,19 +383,24 @@ a:focus, a:hover, a:active {
 
 .btn-primary {
   background-color: #8fd093;
+  color: #815526;
+  border: none;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #128f76;
+  background-color: #815526;
+  color: #fcda31;
 }
 
 .btn-secondary {
-  background-color: #8fd093;
-  border-color: #8fd093;
+  background-color: #fa8ff5;
+  color: #815526;
+  border: none;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #815526;
+  color: #fcda31;
 }
 
 .btn-outline-light{
@@ -415,7 +420,25 @@ a:focus, a:hover, a:active {
   width: 100px;
   height: 135px;
 }
+
+.img-service {
+  text-align: center;
+}
     
 .media {
   color: #815526;
+}
+
+.field_with_errors {
+    display: block;
+    border-radius: 10px;
+}
+
+.container-section {
+  margin-top: 12rem;
+  margin-bottom: 3rem;
+}
+
+.modal-dialog {
+  max-width: 75%;
 }

@@ -1,0 +1,17 @@
+<div class="container container-section">
+  <div class="col-lg-8 text-center">
+	<p id="notice"><%= notice %></p>
+	<%= image_tag(@servicio.image.url(:medium)) %>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @servicio.name %>
+	</p>
+
+	<p>
+	  <strong>Description:</strong>
+	  <%= @servicio.description %>
+	</p>
+	<%= link_to 'Atrás', "/admin"+servicios_path, class: "btn btn-secondary" %> |
+	<%= link_to 'Editar', edit_servicio_path(@servicio), class: "btn btn-primary" %>
+  </div>
+</div>
