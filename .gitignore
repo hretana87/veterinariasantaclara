@@ -21,7 +21,6 @@
 .byebug_history
 
 Capfile
-config/deploy.rb
 database.yml
 secrets.yml
 log/*.log
