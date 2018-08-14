@@ -50,7 +50,7 @@ gem 'capistrano-rails', '~> 1.2'
 gem 'capistrano-rvm'
 
 # Attach image
-gem "paperclip", "~> 5.2.1"
+gem "paperclip"
 
 #Client side validations
 gem 'client_side_validations'
