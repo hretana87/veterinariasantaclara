@@ -1,0 +1,16 @@
+<%= form_for @colaborador, validate: true do |f| %>
+
+  <div class="form-group">
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :name, class: "form-control", placeholder: "Nombre del colaborador"%>
+  </div>      
+
+  <div class="form-group">
+    <%= f.text_area :description, class: "form-control", placeholder: "Descripción del colaborador"%>
+  </div>
+  <%= link_to 'Atrás',request.referer.present? ? request.referer : :back, class: "btn btn-secondary"%>|<%= f.submit class: "btn btn-primary", value: "Guardar"%>
+
+<% end%>

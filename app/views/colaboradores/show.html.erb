@@ -1,0 +1,17 @@
+<div class="container container-section">
+  <div class="col-lg-8 text-center">
+	<p id="notice"><%= notice %></p>
+	<%= image_tag(@colaborador.image.url(:medium)) %>
+	<p>
+	  <strong>Nombre:</strong>
+	  <%= @colaborador.name %>
+	</p>
+
+	<p>
+	  <strong>Descripción:</strong>
+	  <%= @colaborador.description %>
+	</p>
+	<%= link_to 'Atrás', "/admin"+colaboradores_path, class: "btn btn-secondary" %> |
+	<%= link_to 'Editar', edit_colaborador_path(@colaborador), class: "btn btn-primary" %>
+  </div>
+</div>
