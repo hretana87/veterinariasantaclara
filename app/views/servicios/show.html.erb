@@ -3,12 +3,12 @@
 	<p id="notice"><%= notice %></p>
 	<%= image_tag(@servicio.image.url(:medium)) %>
 	<p>
-	  <strong>Name:</strong>
+	  <strong>Nombre:</strong>
 	  <%= @servicio.name %>
 	</p>
 
 	<p>
-	  <strong>Description:</strong>
+	  <strong>Descripción:</strong>
 	  <%= @servicio.description %>
 	</p>
 	<%= link_to 'Atrás', "/admin"+servicios_path, class: "btn btn-secondary" %> |
