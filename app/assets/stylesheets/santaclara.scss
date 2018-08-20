@@ -429,20 +429,20 @@ a:focus, a:hover, a:active {
   color: #815526;
 }
 
-.field_with_errors {
-    display: block;
-    border-radius: 10px;
-}
-
 .container-section {
   margin-top: 12rem;
   margin-bottom: 3rem;
 }
 
 .modal-dialog {
-  max-width: 75%;
+  max-width: 50%;
 }
 
 .field_with_errors {
   color: red;
+}
+
+.img-servicio {
+  width: 500px;
+  height: 500px;
 }

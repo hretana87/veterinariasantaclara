@@ -1,9 +1,27 @@
-<!-- Intro -->
-<header class="masthead bg-primary text-white text-center">
-  <div class="container">
-    <img class="img-fluid" src="<%= asset_path('profile.png') %>" alt="">
-    <h1 class="text-uppercase mb-0">Centro Médico Veterinario</h1>
-    <hr class="star-light">
-    <h2 class="font-weight-light mb-0">Dra. Mariana Carles M.- Enfermedades de la piel - Medicina General</h2>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- Intro -->
+      <header class="masthead bg-primary text-white text-center">
+        <div class="container">
+          <img class="img-fluid" src="<%= asset_path('profile.png') %>" alt="">
+          <h1 class="text-uppercase mb-0">Centro Médico Veterinario</h1>
+          <hr class="star-light">
+          <h2 class="font-weight-light mb-0">Dra. Mariana Carles M.- Enfermedades de la piel - Medicina General</h2>
+        </div>
+      </header>
+    </div>
+    <div class="carousel-item bg-primary">
+      <div class="container img-service">
+        <img class="img-service" src="<%= asset_path('sello.jpg') %>" alt="">    
+      </div>      
   </div>
-</header>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
