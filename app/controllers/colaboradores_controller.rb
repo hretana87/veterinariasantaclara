@@ -33,7 +33,7 @@ class ColaboradoresController < ApplicationController
 
     respond_to do |format|
       if @colaborador.save
-        format.html { redirect_to colaborador_path(@colaborador), notice: 'Colaborador was successfully created.' }
+        format.html { redirect_to colaborador_path(@colaborador), notice: 'Colaborador creado exitosamente.' }
         format.json { render :show, status: :created, location: @colaborador }
       else
         format.html { render :new }
@@ -47,7 +47,7 @@ class ColaboradoresController < ApplicationController
   def update
     respond_to do |format|
       if @colaborador.update(colaborador_params)
-        format.html { redirect_to @colaborador, notice: 'Colaborador was successfully updated.' }
+        format.html { redirect_to @colaborador, notice: 'Colaborador actualizado exitosamente.' }
         format.json { render :show, status: :ok, location: @colaborador }
       else
         format.html { render :edit }
@@ -61,7 +61,7 @@ class ColaboradoresController < ApplicationController
   def destroy
     @colaborador.destroy
     respond_to do |format|
-      format.html { redirect_to '/admin/colaboradores', notice: 'Colaborador was successfully destroyed.' }
+      format.html { redirect_to '/admin/colaboradores', notice: 'Colaborador eliminado exitosamente.' }
       format.json { head :no_content }
     end
   end
