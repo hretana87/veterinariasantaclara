@@ -1,20 +1,62 @@
 <section class="portfolio" id="portfolio">
   <div class="container">
-    <h2 class="text-center text-uppercase text-secondary mb-0">Colaboradores</h2>
+    <h2 class="text-center text-uppercase text-secondary mb-0">Nosotros.</h2>
     <hr class="star-dark mb-5">
+
     <div class="row">
-      <% @colaboradores.each_with_index do |colaborador, index| %>
-        <div class="col-md-8 col-lg-4">
-        <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#modal-<%= index %>">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fa fa-search-plus fa-2x"><h3><%= colaborador.name%></h3></i>
-              </div>
-            </div>
-            <img class="d-block w-100" src="<%= colaborador.image.url(:medium) %>">                   
-          </a>
+      <div class="col-sm-6">
+        <p>
+          <h3>Misión.</h3>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        </p>
       </div>
-      <% end %>      
+      <div class="col-sm-6">
+        <p>
+          <h3>Visión.</h3>
+          Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="btn-primary" data-toggle="collapse" href="#collapseEquipo"  aria-expanded="false" aria-controls="collapseExample">
+          Nuestro equipo.
+        </h3>
+        <div class="collapse" id="collapseEquipo">
+          <div class="card card-body">
+            <ul class="list-group">
+              <% @colaboradores.each_with_index do |colaborador, index| %>
+              <li class="list-group-item btn btn-primary" data-toggle="modal" data-target="#modal-<%= index %>"><%= colaborador.name %></li>
+              <% end %>               
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <h3 class="btn-secondary" data-toggle="collapse" href="#collapseValores"  aria-expanded="false" aria-controls="collapseExample2">
+          Nuestros Valores.
+        </h3>
+        <div class="collapse" id="collapseValores">
+          <div class="card card-body">
+            <ul class="list-group">
+              <li class="list-group-item btn btn-secondary">Amor</li>
+              <li class="list-group-item btn btn-secondary">Vocación</li>
+              <li class="list-group-item btn btn-secondary">Integridad</li>
+              <li class="list-group-item btn btn-secondary">Confianza</li>
+              <li class="list-group-item btn btn-secondary">Honestidad</li>
+              <li class="list-group-item btn btn-secondary">Ciencia</li>
+              <li class="list-group-item btn btn-secondary">Mejora continua</li>
+              <li class="list-group-item btn btn-secondary">Innovación</li>
+              <li class="list-group-item btn btn-secondary">Capacitación</li>
+              <li class="list-group-item btn btn-secondary">Calidad</li>
+              <li class="list-group-item btn btn-secondary">Responsabilidad</li>
+              <li class="list-group-item btn btn-secondary">Carisma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

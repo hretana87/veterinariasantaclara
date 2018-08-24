@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'servicios', to: 'servicios#public_index'
   post 'servicios', to: 'servicios#create'
-  get 'colaboradores', to: 'colaboradores#public_index'
+  get 'nosotros', to: 'colaboradores#public_index'
   post 'colaboradores', to: 'colaboradores#create'
   scope '/admin' do
     resources :servicios
