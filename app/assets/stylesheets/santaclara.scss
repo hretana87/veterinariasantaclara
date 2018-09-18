@@ -100,6 +100,7 @@ section h2 {
   padding-bottom: 1rem;
   font-weight: 700;
   font-family: 'Montserrat';
+  opacity: 0.5;
 }
 
 #mainNav .navbar-brand {
@@ -113,13 +114,11 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  background-color: #8fd093;
   color: #815526;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #fcda31;
-  background-color: #815526;  
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -163,6 +162,7 @@ section h2 {
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    opacity: 0.9;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 2.5em;
@@ -368,7 +368,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-header {
-  background-color: #fa8ff5 !important;
+  background-color: white !important;
 }
 
 .text-center {
